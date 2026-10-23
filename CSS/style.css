@@ -1,0 +1,286 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.appear1,
+.appear2 {
+    display: none;
+}
+
+.appear1.show,
+.appear2.show {
+    display: block;
+}
+
+nav>.container>a {
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 600;
+}
+
+nav>.container>div>ul {
+    width: 65%;
+    display: flex;
+    padding-top: 1rem;
+    justify-content: space-around;
+}
+
+nav ul li {
+    font-weight: 600;
+    line-height: 24px;
+    position: relative;
+    transition: 1s;
+}
+
+#navbarSupportedContent>ul>li::after {
+    content: "";
+    position: absolute;
+    background-color: whitesmoke;
+    width: 0%;
+    height: 2px;
+    top: 100%;
+    left: 0;
+    transition: 1s;
+}
+
+#navbarSupportedContent>ul>li:hover::after {
+    width: 70%;
+}
+
+#navbarSupportedContent>ul>li::after {
+    content: "";
+    position: absolute;
+    background-color: whitesmoke;
+    width: 0%;
+    height: 2px;
+    top: 100%;
+    left: 0;
+    transition: 1s;
+}
+
+#navbarSupportedContent>ul>li:nth-child(1)::after {
+    width: 70%;
+}
+
+nav ul ul li {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 600;
+}
+
+.appear1 a,
+.appear2 a {
+    color: black;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.appear1 a:hover,
+.appear2 a:hover {
+    color: rgb(99, 164, 255);
+}
+
+.appear1 {
+    position: absolute;
+}
+
+.appear2 {
+    position: absolute;
+    right: 100%;
+    top: 20%;
+}
+
+header {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/hero-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+.hero-title {
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 86px;
+}
+
+.hero-sub {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 60px;
+}
+
+.cursor {
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    51%,
+    100% {
+        opacity: 0;
+    }
+}
+
+#about h5 {
+    position: relative;
+}
+
+#about h5::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 20%;
+    height: 3px;
+    background-color: rgb(0, 120, 255);
+}
+
+#service .item .icon {
+    width: max-content;
+    border: 10px solid rgb(0, 120, 255);
+    border-radius: 50%;
+    margin: auto;
+    transition: 1s;
+}
+
+#service .item:hover .icon {
+    background-color: rgb(0, 120, 255);
+    border-color: rgb(205, 225, 248);
+    color: white;
+}
+
+.bg {
+    background-image: linear-gradient(rgb(0, 120, 255, 0.7), rgb(0, 120, 255, 0.7)), url(../images/counters-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg .icon {
+    width: max-content;
+    border: 10px solid rgb(205, 225, 248);
+    border-radius: 50%;
+    margin: auto;
+}
+
+.btm {
+    position: relative;
+    /* background-color: aquamarine; */
+}
+
+.btm::after {
+    content: "";
+    position: absolute;
+    width: 4%;
+    height: 4px;
+    background-color: rgb(0, 120, 255);
+    top: 100%;
+    left: 48%;
+}
+
+#work .item {
+    box-shadow: 0px 5px 5px rgba(167, 163, 163, 0.685);
+}
+
+#work .item img {
+    transition: 1s;
+}
+
+#work .item:hover img {
+    transform: scale(1.2);
+}
+
+#work .icon {
+    color: rgb(0, 120, 255);
+    border: 3px solid rgb(0, 120, 255);
+    border-radius: 50%;
+}
+
+.bg2 {
+    background-image: linear-gradient(rgb(0, 120, 255, 0.5), rgb(0, 120, 255, 0.5)), url(../images/overlay-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg2 .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+}
+
+
+#blog a {
+    color: black;
+}
+
+#blog a:hover {
+    color: rgb(0, 120, 255);
+}
+
+#blog div>img {
+    width: 2rem;
+    height: 2rem;
+}
+
+#blog .style {
+    top: -10px;
+    width: max-content;
+}
+
+#contact {
+    background-image: linear-gradient(rgb(0, 120, 255, 0.5), rgb(0, 120, 255, 0.5)), url(../images/overlay-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+footer h5::after {
+    content: "";
+    width: 15%;
+    height: 3px;
+    background-color: rgb(0, 120, 255);
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+footer .icon {
+    border: 3px solid rgb(0, 120, 255);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    transition: 0.5s;
+}
+
+footer .icon a {
+    color: black;
+}
+
+footer .icon:hover {
+    background-color: rgb(0, 120, 255);
+    border-color: rgb(205, 225, 248);
+
+    a {
+        color: white;
+    }
+}
